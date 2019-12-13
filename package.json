@@ -39,6 +39,7 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "eslint": "^6.7.2",
     "eslint-import-resolver-babel-module": "^5.1.0",
+    "husky": "^3.1.0",
     "jest": "^24.9.0",
     "jetifier": "^1.6.5",
     "metro-react-native-babel-preset": "^0.57.0",
@@ -48,6 +49,50 @@
     "reactotron-redux": "^3.1.2"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "collectCoverage": true,
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "setupFilesAfterEnv": [
+      "./jest-setup.js"
+    ],
+    "collectCoverageFrom": [
+      "**/src/**/*.{js,jsx}",
+      "!**/styles?.js",
+      "!**/common/**/*.{js,jsx}",
+      "!**/**/index.js",
+      "!**/**/reducers.js",
+      "!**/**/http.js",
+      "!**/**/navigation/**/*.{js,jsx}"
+    ],
+    "coverageReporters": [
+      "html"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageThreshold": {
+      "global": {
+        "statements": 0,
+        "functions": 0,
+        "lines": 0
+      }
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-navigation)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
   }
 }
