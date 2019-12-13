@@ -47,4 +47,4 @@ I didn't add the following packages in order to keep this project as simple as p
 - install the npm dependencies by running `yarn` or `npm`
 - Install [react-native-rename](https://github.com/JuneDomingo/react-native-rename) and rename the project to your own name. By default is SimpleStarter.
 - Set your own bundle ID, package ID, android keystore, etc.
-- Customize your Husky setupoll
+- Customize your Husky setup
