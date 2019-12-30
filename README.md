@@ -2,7 +2,7 @@
 
 Just another [React Native](https://facebook.github.io/react-native/) boilerplate that can be used to kickstart a mobile application.
 
-I created this boilerplate following the best practices, packages configs I've been using for 3+ years developing RN apps.
+I created this boilerplate following the best practices, packages, configs I've been using for 3+ years developing RN apps.
 
 ## Content
 
@@ -17,6 +17,7 @@ Here you will find:
 - [React Navigation](https://reactnavigation.org/docs/en/hello-react-navigation.html) with a nice NavigationService you could use within your async actions.
 - Prettier + ESLint
 - [Husky](https://github.com/typicode/husky)
+- [react-native-bootsplash](https://github.com/zoontek/react-native-bootsplash)
 - Some other goodies like [RamdaJS](https://ramdajs.com/), [Lodash](https://lodash.com/), [date-fns](https://date-fns.org/), among others.
 
 ## Suggested Packages/Services
@@ -24,7 +25,6 @@ Here you will find:
 I didn't add the following packages in order to keep this project as simple as possible. Moreover, you may not want/need to use them.
 
 - [Microsoft's AppCenter](https://appcenter.ms/)
-- [react-native-bootsplash](https://github.com/zoontek/react-native-bootsplash) to manage the SplashScreens
 - [Vector Icons](https://github.com/oblador/react-native-vector-icons)
 
 ## Directory layout
@@ -42,9 +42,10 @@ I didn't add the following packages in order to keep this project as simple as p
 
 ## Using the Boilerplate
 
-- clone this repository
-- remove the previous git history: `rm -rf .git`
-- install the npm dependencies by running `yarn` or `npm`
+- Clone this repository
+- Remove the previous git history: `rm -rf .git`
+- Install the npm dependencies by running `yarn` or `npm`
 - Install [react-native-rename](https://github.com/JuneDomingo/react-native-rename) and rename the project to your own name. By default is SimpleStarter.
 - Set your own bundle ID, package ID, android keystore, etc.
+- Set/Customize the splash screen, app icons, app name.
 - Customize your Husky setup
